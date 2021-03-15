@@ -1,12 +1,22 @@
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="index.css" />
   </head>
   <body>
-    <div>hello</div>
+    <select name="" id="diffLevel">
+      <option value="3" selected>Easy</option>
+      <option value="4">Medium</option>
+      <option value="6">Hard</option>
+    </select>
+    <button id="start-btn" onclick="boardGame.init()">Start</button>
+    <section class="hideOnLoad">
+      <h4>Score: <b id="score"></b></h4>
+      <h5>Duration: <i id="duration"></i> seconds left</h5>
+    </section>
+    <section id="final-score">
+    </section>
+    <div id="container"></div>
   </body>
   <script type="text/javascript" src="index.js"></script>
 </html>
